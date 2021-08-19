@@ -232,6 +232,52 @@
     })();
     </script>
     <!-- End Inspectlet Asynchronous Code -->
-    
+
+
+    <!--Java para el mensaje de submited-->
+
+    <script>
+        var form = document.getElementById("contact-form");
+                
+        async function handleSubmit(event) {
+          event.preventDefault();
+          const status = document.getElementById("form-status");
+          const data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            document.getElementById("form-status").style.display="block";
+            status.innerHTML = "Thanks for your submission!";
+            form.reset();
+            setTimeout(function() {
+                const msg = document.getElementById("form-status");
+                msg.style.transition = '.5s';
+                msg.style.opacity = '0';
+                msg.style.visibility = 'hidden';
+                msg.style.display = 'none';
+            }, 1250);
+        
+          }).catch(error => {
+            document.getElementById("form-status").style.display="block";
+            status.innerHTML = "Oops! There was a problem submitting your form."
+            setTimeout(function() {
+                const msg = document.getElementById("form-status");
+                msg.style.transition = '.5s';
+                msg.style.opacity = '0';
+                msg.style.visibility = 'hidden';
+                msg.style.display = 'none';
+            }, 1250);
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+        
+        </script>
+
+    <!--Java para el mensaje de submited-->
+
 </body>
 </html>
