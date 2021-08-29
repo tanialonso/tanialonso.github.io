@@ -6,17 +6,66 @@
 
     <title>Vincent van Gogh</title>
     <meta name="description" content="The Dutch post-impressionist whose works are characterised by bold colours and dramatic, impulsive and expressive brushwork.">
-
+    
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menus.css">
 
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
 
+    <!-- Link to icons for Font Awesome 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"> 
+
+    
 </head>
 
 
 <body>
+
+<!-- Begin desktop menu -->
+<div class="container-menu-desktop menu-light menu-sticky menu-img">
+    <!-- first child item -->
+    <a href="../../index.html" ><img src="assets/img/website-logo.png" alt="website logo" class= "menu-img" > </a>
+    <!-- second child item -->
+    <ul>
+        <li><a href="../../portfolio/index.html" class="btn-cta"><i class="fas fa-arrow-left"></i> Back to Portfolio</a></li>
+    </ul>
+</div>
+<!-- End desktop menu -->
+
+<!-- Begin mobile menu bar -->
+<div class="container-menu-bar-mobile menu-light menu-sticky menu-img">
+    <!-- first child -->
+    <a href="../../index.html"><img src="assets/img/website-logo.png" alt="website logo" class="menu-img"></a>
+    <!-- second child -->
+    <div class="item-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</div>
+<!-- End mobile menu bar -->
+
+<!-- Begin mobile menu slide-out options -->
+<div class="flyout-menu flyout-menu-is-closed menu-light menu-img">
+<ul>
+    <li><a href="../../portfolio/index.html" class="btn-cta"><i class="fas fa-arrow-left"></i> Back to Portfolio</a></li>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../../../portfolio/index.html">Contact</a></li>
+    
+</ul>
+</div>
+<!-- End mobile menu slide-out options -->
     
 <h1>Vincent van Gogh</h1>
 
@@ -59,8 +108,9 @@
 <p>Van Gogh is known to have sold only a single painting in his lifetime; for 400 francs or about €1,800 in today's value. In 1990, one of his paintings, <i>Portrait of Dr. Gachet</i>, fetched $82.5 million at auction.</p>
 
 
-
 <p><b>Source</b>: <i>All text and images from Wikipedia</i>.</p>
 
+<!-- Script for menu -->
+<script src="../van-gogh/assets/js/menus.js"></script>
 </body>
 </html>

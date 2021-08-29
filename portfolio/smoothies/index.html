@@ -8,22 +8,62 @@
     <meta name="description" content="Dublin's finest smoothie store. Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menus.css">
 
     <!-- Google Font stylesheet -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
 
-    <!--
-    <style>
-        section { border: solid 2px red }
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
+    <link rel="manifest" href="assets/img/site.webmanifest">
 
-        .col-2 { border: solid 2px blue}
+    <!-- Link to icons for Font Awesome 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"> 
 
-    </style>
-    -->
 
 </head>
 <body>
+
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-light menu-sticky menu-img">
+    <!-- first child item -->
+        <a href="../index.html" ><img src="assets/img/website-logo.png" alt="website logo" class= "menu-img" > </a>
+        <!-- second child item -->
+        <ul>
+            <li><a href="../../portfolio/index.html" class="btn-cta"><i class="fas fa-arrow-left"></i> Back to Portfolio</a></li>
+        </ul>
+    </div>
+    <!-- End desktop menu -->
+
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-light menu-sticky menu-img">
+        <!-- first child -->
+        <a href="../../index.html"><img src="assets/img/website-logo.png" alt="website logo" class="menu-img"></a>
+        <!-- second child -->
+        <div class="item-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <!-- End mobile menu bar -->
+
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-light menu-img">
+    <ul>
+        <li><a href="../../portfolio/index.html" class="btn-cta"><i class="fas fa-arrow-left"></i> Back to Portfolio</a></li>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../contact/index.html">Contact</a></li>
+        
+    </ul>
+    </div>
+    <!-- End mobile menu slide-out options -->
+
     <!-- hero block -->
     <header class="hero-block text-center">
 
@@ -122,6 +162,8 @@
 
     </article>
     </main>
+<!-- Script for menu -->
+<script src="../van-gogh/assets/js/menus.js"></script>
 
 </body>
 </html>

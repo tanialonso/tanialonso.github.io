@@ -75,6 +75,16 @@ section h2 {
     .container-flexbox .col-2 { width: 100% }
 }
 
+/* Logo in menu style */
+
+.menu-img {
+    margin-bottom: 0px; 
+    box-shadow: none;
+    font-family:Rubik, sans-serif;
+    
+}
+
+
 /* ======= CONTENT INSIDE FLEXBOX CHILD COLUMNS ======= */
 
 /* Headings  */

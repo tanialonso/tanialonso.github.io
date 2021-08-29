@@ -27,18 +27,19 @@ body {
 /* Main heading */
 h1 {
        
-    font-size: 84px;
+    font-size: calc(48px + (84 - 48) * ((100vw - 320px) / (1600 - 320)));
     line-height: 1.1;
     font-weight: normal;
     color: #3434B0;
     letter-spacing: -1px;
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 32px;
 }
 
 /* Small headings */
 h2 {   
-    font-size: 26px;
+    font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1600 - 320)));  
     color:#3434B0;
     line-height: 1.5;
     margin-bottom: 42px;
@@ -46,7 +47,7 @@ h2 {
 
 /* Smaller headings */
 h3 {    
-    font-size: 42px;
+    font-size: calc(32px + (38 - 32) * ((100vw - 320px) / (1600 - 320)));
     color: #000;
     letter-spacing:-1px;
     margin-top: 40px;
@@ -56,7 +57,7 @@ h3 {
 
 /* Text paragraphs */
 p {
-    font-size: 22px;
+    font-size: calc(16px + (21 - 16) * ((100vw - 320px) / (1600 - 320)));
     color: #455C80;
     line-height: 1.6;
     margin-top: 0;
@@ -68,8 +69,27 @@ img{
     margin-bottom: 42px;
     /* Drop shadow effect at right and bottom of image */
     box-shadow: 8px 10px 8px #888;
+} 
+
+/* Logo in menu style */
+
+.menu-img {
+    margin-bottom: 0px; 
+    box-shadow: none;
+    font-family:Rubik, sans-serif;
+    
 }
 
+.menu-img a:link, a:visited{
+    border-bottom: none;
+    padding-bottom: none;
+    
+    }
+
+.menu-img a:hover, a:focus, a:active {
+        color: none;
+        border-bottom: none;
+    }
 /* Passive link styles */
             
 a:link, a:visited {
