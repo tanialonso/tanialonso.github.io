@@ -1,8 +1,18 @@
+/* Parent container */
+.container-footer { 
+    display: flex;
+    margin: 32px 0 32px 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 /* Outer footer parent container */
 footer { 
     text-align: center;
     color:#fff;
     background-color:#2c3e50;
+    
 }
 
 /* Desktop footer - inside padding  */
@@ -15,7 +25,10 @@ footer {
 @media (max-width:767px) {
 	footer { padding: 8% 8% 6% 8% }
     .footer-logo {max-width: 50%;}
-}
+    }
+     
+  
+
 
 /* Styles for footer background, text, icons and links */
 
@@ -24,12 +37,9 @@ footer * { color: #fff }
 /* Footer logo */
 
 .footer-logo{
-
-        display: block;
+        display: flex;
         min-width: 15%;
         height: auto;
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom: 42px;
       
 }
@@ -87,7 +97,7 @@ footer ul.footer-links li a {
     padding-bottom:2px;    
     font-size: calc(17px + (20 - 17) * ((100vw - 320px)/(1600 - 320)));
     color: #fff;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 footer ul.footer-links li a:link, 
@@ -148,5 +158,4 @@ footer a.privacy-legal:visited {
 
 footer a.privacy-legal:active,
 a.privacy-legal:hover {
-    border-bottom-color: #fff
-}
+    border-bottom-color: #fff }
