@@ -130,7 +130,7 @@
     padding: 0 6% 0 6%;
 }
 
-/* three bars hozizontal in hamburger icon */
+/* three bars horizontal in hamburger icon */
 .container-menu-bar-mobile .item-icon .bar1, 
 .container-menu-bar-mobile .item-icon .bar2, 
 .container-menu-bar-mobile .item-icon .bar3 { width: 36px; height: 4px; margin: 7px 0; transition: 0.4s }
@@ -146,7 +146,7 @@
     top: 72px; /* same height as menu bar */
     width: 320px; 
     max-height: 100%;
-    height: 100%;
+    height: 625px;
     padding: 30px 40px 40px 40px;
     transition: 0.5s;
     overflow-x: hidden;
@@ -176,8 +176,7 @@
 /* style flyout menu links */
 .flyout-menu ul li a {
     font-size: 18px;
-    /* font-weight:bold */
-    /* text-transform: uppercase */
+   
 }
 
 /* cta button */
@@ -197,8 +196,7 @@
     font-size: 20px;
     margin: 42px 0 4px 0;
     text-align: center;
-    /* letter-spacing: 2px; *./
-    /* text-transform: uppercase */
+    
 }
 
 .flyout-menu h5 {
@@ -287,7 +285,7 @@
 }
 
 /* on mobiles only */
-.flyout-menu.menu-light { background-color: rgb(227,250,245) }
+.flyout-menu.menu-light { background-color: #fff2e3 }
 .menu-light.flyout-menu hr { background-color:rgb(80,227,194); border-color: rgb(80,227,194) } 
 
 .menu-light.flyout-menu h4,

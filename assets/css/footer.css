@@ -19,14 +19,22 @@ footer {
 @media (min-width:768px) {
 	footer { padding: 4% 8% 2% 8% }
     .footer-logo {max-width: 15%;}
+    footer ul.footer-links li,
+    footer ul.footer-icons li {
+    display: inline-block;
+    margin: 0 32px 0 0;
+    
+    }
 }
 
 /* Mobiles footer - inside padding */
+
 @media (max-width:767px) {
 	footer { padding: 8% 8% 6% 8% }
     .footer-logo {max-width: 50%;}
+       
     }
-     
+
   
 
 
@@ -35,7 +43,6 @@ footer {
 footer * { color: #fff }
 
 /* Footer logo */
-
 .footer-logo{
         display: flex;
         min-width: 15%;
@@ -44,50 +51,30 @@ footer * { color: #fff }
       
 }
 
-
-
-/* Footer headings */
-footer h4 {
-   font-family: serif;
-   font-weight: normal;
-   font-style: italic;
-   font-size: calc(26px + (48 - 26) * ((100vw - 320px)/(1600 - 320)));
-   margin: 0 auto 16px 0;
-}
-
-footer h5 {
-    font-family: sans-serif;
-    font-weight: normal;
-    font-style:  italic;
-    color: #38a696;
-    margin: 0 auto 36px auto;
-    font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
-}
-
 /* Footer text links and icon links */
 footer ul.footer-links,
 footer ul.footer-icons {
     list-style-type: none;
+    
 }
 
 footer ul.footer-links {
-    margin: 0 auto 48px auto;
+    margin: 0 auto 20px auto;
 }
 
 footer ul.footer-icons {
     margin: 0 auto 48px auto;
-}
-
-footer ul.footer-links li,
-footer ul.footer-icons li {
-    display: inline-block;
-    margin: 0 32px 0 0;
 }
 
 footer ul.footer-links li:last-child,
 footer ul.footer-icons li:last-child {
     margin-right: 0;
 }
+
+footer ul.footer-icons li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    }
 
 /* Footer text links */
 footer ul.footer-links li a {
@@ -97,7 +84,7 @@ footer ul.footer-links li a {
     padding-bottom:2px;    
     font-size: calc(17px + (20 - 17) * ((100vw - 320px)/(1600 - 320)));
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 footer ul.footer-links li a:link, 
@@ -107,7 +94,8 @@ footer ul.footer-links li a:visited  {
 
 footer ul.footer-links li a:hover, 
 footer ul.footer-links li a:active  {
-   border-bottom-color: #fff
+   border-bottom-color: #fff;
+   text-decoration: none;
 }
 
 /* Footer icons */

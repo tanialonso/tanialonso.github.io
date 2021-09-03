@@ -111,6 +111,22 @@ a.fancy-link:link, a.fancy-link:visited { color: rgb(49,145,131); border-bottom-
 
 a.fancy-link:hover, a.fancy-link:active { color: rgb(36,64,84); border-bottom-color: rgb(36,64,84) }
 
+/* ============== DARK FANCY HYPERLINKS =================== */
+
+a.dark-fancy-link:link, a.dark-fancy-link:visited,
+a.dark-fancy-link:hover, a.dark-fancy-link:active { 
+    text-decoration: none;
+    color: inherit;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 2px;
+}
+
+a.dark-fancy-link:link, a.dark-fancy-link:visited { color: rgb(36,64,84); border-bottom-color:rgb(36,64,84) }
+
+a.dark-fancy-link:hover, a.dark-fancy-link:active { color: rgb(49,145,131); color: rgb(49,145,131)}
+
+
 
 /* ============== FLEXBOX MULTI-COLUMN LAYOUTS ================== */
 
@@ -208,6 +224,10 @@ img.image-circle {
 .container-flexbox .item-1 p {
     line-height: 1.5; margin-bottom: 14px;
     font-size: calc(17px + (25 - 17) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.container-flexbox-portfolio{
+    margin-top: 14px;
 }
 
 @media all and (max-width:767px) {
