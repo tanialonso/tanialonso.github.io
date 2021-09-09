@@ -203,11 +203,11 @@ a.dark-fancy-link:hover, a.dark-fancy-link:active { color: rgb(49,145,131); colo
 /* Spacing under images in children of parent flexbox containers */
 .container-flexbox img { margin-bottom: 20px }
 
-/* Drop shadow effect around images  */
+/* Drop shadow effect around images  
 img.image-shadow { 
     box-shadow: 8px 10px 8px #888;
     margin-bottom: 20px
-}
+} */
 
 /* Makes square images circles  */
 img.image-circle { 
@@ -251,7 +251,7 @@ img.image-circle {
     .container-flexbox .item-2,    
     .container-flexbox .item-3  { text-align: center }
     .container-flexbox .item-3 img {
-        width: 90%;
+        width: 100%;
         max-width: 390px;
         margin-left: auto;
         margin-right: auto;
@@ -268,8 +268,8 @@ img.image-circle {
 }
 
 .container-flexbox .item-3 img {
-    margin-top: 12px
-}
+    margin-top: 0px;
+    }
 
 
 /* =============== BEGIN CONTACT FORM CSS ============= */
@@ -399,3 +399,117 @@ img.image-circle {
 	font-size: 104%
 }
 
+/* Animation in portfolio images */
+
+/* Desktop */
+@media all and (min-width:768px) {
+    .column {
+        margin: 15px 15px 0;
+        padding: 0;
+    }
+    .column:last-child {
+        padding-bottom: 0px;
+    }
+    .column::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+    .column div {
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 200px;
+        margin: 0 0 0 25px;
+        padding: 0;
+    }
+    .column div:first-child {
+        margin-left: 0;
+    }
+    .column div span {
+        position: relative;
+        bottom: -0px;
+        left: 0;
+        z-index: -1;
+        display: block;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        color: #444;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: center;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        opacity: 0;
+    }
+    figure {
+        width: 100%;
+        height: 230px;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        overflow: hidden;
+    }
+    figure:hover+span {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    /* Zoom In #1 */
+    .hover01 figure img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .hover01 figure:hover img {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    /* Opacity #2 */
+    .hover12 figure {
+        background: #000;
+    }
+    .hover12 figure img {
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .hover12 figure:hover img {
+        opacity: .7;
+    }
+
+    * {box-sizing:border-box}
+
+    /* Container needed to position the overlay. Adjust the width as needed */
+    .container {
+    position: relative;
+    width: 50%;
+    max-width: 50%;
+    }
+
+    /* The overlay effect - lays on top of the container and over the image */
+    .overlay {
+    position: sticky;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 10px;
+    text-align:center;
+    text-decoration: none;
+    }
+    
+    a:link, a:visited{
+        text-decoration: none;
+    }
+    /* When you mouse over the container, fade in the overlay title */
+    .container:hover .overlay {
+    opacity: 1;
+    }
+}
