@@ -21,6 +21,11 @@ p, li { color: #403d50 }
          padding: 7% 7% 10% 7%;
          text-align: center;
     }
+    
+}
+
+@media all and (max-width:768px){
+    .content-desktop {display: none;}
 }
 
 .container-one-column h1 {
@@ -190,7 +195,10 @@ a.dark-fancy-link:hover, a.dark-fancy-link:active { color: rgb(49,145,131); colo
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
 	.container-flexbox .item-3 { width: 30% }
-	.container-flexbox .item-3 { margin-bottom: 6% }
+	.container-flexbox .item-3 { margin-bottom: 6% ;
+        text-align: center 
+    }
+    
 }
 
 /* Mobiles - 1 column */
@@ -202,12 +210,6 @@ a.dark-fancy-link:hover, a.dark-fancy-link:active { color: rgb(49,145,131); colo
 
 /* Spacing under images in children of parent flexbox containers */
 .container-flexbox img { margin-bottom: 20px }
-
-/* Drop shadow effect around images  
-img.image-shadow { 
-    box-shadow: 8px 10px 8px #888;
-    margin-bottom: 20px
-} */
 
 /* Makes square images circles  */
 img.image-circle { 
@@ -399,10 +401,12 @@ img.image-circle {
 	font-size: 104%
 }
 
-/* Animation in portfolio images */
+/* Animation in portfolio images in Desktop only */
 
-/* Desktop */
-@media all and (min-width:768px) {
+@media all and (min-width:769px) {
+
+    .content-desktop {display: block;}
+
     .column {
         margin: 15px 15px 0;
         padding: 0;
@@ -445,7 +449,8 @@ img.image-circle {
     }
     figure {
         width: 100%;
-        height: 230px;
+        height: 190px;
+        max-height: 190px;
         margin: 0;
         padding: 0;
         background: #fff;
@@ -488,6 +493,7 @@ img.image-circle {
     position: relative;
     width: 50%;
     max-width: 50%;
+      
     }
 
     /* The overlay effect - lays on top of the container and over the image */
