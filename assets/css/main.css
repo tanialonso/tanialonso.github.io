@@ -205,6 +205,23 @@ a.dark-fancy-link:hover, a.dark-fancy-link:active { color: rgb(49,145,131); colo
 @media all and (max-width:767px) { 
 	.container-flexbox .item-3 { width: 100% }
 	.container-flexbox .item-3 { margin-bottom: 14% }
+    .wrapper{
+        background-color:#ffd6a9;
+        border: none ;
+        border-radius: 5%;
+        padding:  12px 12px 0px 12px;
+        
+    }
+    .wrapper p{
+        text-align: left;
+    }
+    .wrapper h3{
+        text-align: justify;
+        
+    }
+    .wrapper img{
+        border-radius: 5%;
+    }
 }
 
 
@@ -502,7 +519,7 @@ img.image-circle {
     position: sticky;
     bottom: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5); 
     color: #f1f1f1;
     transition: .5s ease;
     opacity:0;
