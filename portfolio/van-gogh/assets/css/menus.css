@@ -73,7 +73,8 @@
     border-width: 2px;
     border-style: solid;
     font-weight: bold;
-    font-size: calc(14px + (21 - 16) * ((100vw - 320px) / (1600 - 320)));  
+    font-size: calc(14px + (21 - 16) * ((100vw - 320px) / (1600 - 320))); 
+    border-radius: 30px; 
     
 }
 
@@ -188,6 +189,7 @@
 .flyout-menu a.btn-cta {
     display: inline-block;
     padding: 10px 24px;
+    border-radius: 30px;
 }
 
 .flyout-menu hr { 
