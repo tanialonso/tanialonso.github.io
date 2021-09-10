@@ -110,8 +110,7 @@
 /* style text for links and cta button  */
 .container-menu-desktop ul li a {
     font-size: calc(15px + (19 - 15) * ((100vw - 320px)/(1600 - 320)));
-    /* font-weight:bold */
-    /* text-transform: uppercase */
+   
 }
 
 /* cta button padding */
@@ -300,7 +299,7 @@
 }
 
 /* on mobiles only */
-.flyout-menu.menu-light { background-color: #fff2e3 }
+.flyout-menu.menu-light { background-color: #ffd6a9}
 .menu-light.flyout-menu hr { background-color:rgb(80,227,194); border-color: rgb(80,227,194) } 
 
 .menu-light.flyout-menu h4,
@@ -313,8 +312,6 @@
 .menu-light .item-icon .bar2, 
 .menu-light .item-icon .bar3 { background-color:#403d50 }	
 
-/* phone number link */
-a[href^=tel] { text-decoration: none; color: red }
 
 /* email link */
 .menu-light.flyout-menu h5 a:link, 
