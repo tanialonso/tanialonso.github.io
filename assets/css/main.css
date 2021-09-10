@@ -331,7 +331,7 @@ img.image-circle {
 	#contact-form .flex-row .item-name,
 	#contact-form .flex-row .item-email { width: 47% }
 	#contact-form .flex-row .item-textarea { width: 64% }
-	#contact-form .flex-row .item-btn { width: 30%; align-self: flex-end }
+	#contact-form .flex-row .item-btn { width: 30%; align-self: flex-end; border-radius: 30px }
 }
 
 /* Mobiles */
@@ -386,7 +386,8 @@ img.image-circle {
     color: #000;
 	font-weight: bold;
     padding: 18px 28px;
-    font-size: 18px
+    font-size: 18px;
+    border-radius: 30px;
 }
 
 

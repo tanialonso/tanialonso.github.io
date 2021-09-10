@@ -71,6 +71,7 @@
     border-width: 2px;
     border-style: solid;
     font-weight: bold;
+    border-radius: 30px;
 }
 
 /* style icon in cta button on desktop and mobile menus */
@@ -183,6 +184,7 @@
 .flyout-menu a.btn-cta {
     display: inline-block;
     padding: 10px 24px;
+    border-radius: 30px;
 }
 
 .flyout-menu hr { 
@@ -286,13 +288,15 @@
     border-color: rgb(80,227,194);
     background-color: rgb(80,227,194);
     color: #000;
+    border-radius: 30px;
 }
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
     border-color: #403d50;
     background-color: #403d50;
-    color: #fff
+    color: #fff;
+    border-radius: 30px;
 }
 
 /* on mobiles only */
