@@ -299,8 +299,8 @@
 }
 
 /* on mobiles only */
-.flyout-menu.menu-light { background-color: #ffd6a9}
-.menu-light.flyout-menu hr { background-color:rgb(80,227,194); border-color: rgb(80,227,194) } 
+.flyout-menu.menu-light { background-color: #fff3c7}
+.menu-light.flyout-menu hr { background-color:#FD6F96; border-color: #FD6F96 } 
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
@@ -313,21 +313,15 @@
 .menu-light .item-icon .bar3 { background-color:#403d50 }	
 
 
-/* email link */
-.menu-light.flyout-menu h5 a:link, 
-.menu-light.flyout-menu h5 a:visited {
-    border-bottom-color: rgb(80,227,194);
-}
-
 .menu-light.flyout-menu h5 a:hover, 
 .menu-light.flyout-menu h5 a:active {
     border-bottom-color: transparent;
 }
 
 /* profile image border colour */
-.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: rgb(80,227,194) }
+.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #FD6F96 }
 
 /* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color: rgb(80,227,194) }
+.menu-light.flyout-menu .fly-out-social-icons a i { color: #FD6F96 }
 
 /* === End light background menu === */
