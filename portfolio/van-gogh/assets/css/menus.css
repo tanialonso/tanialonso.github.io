@@ -73,8 +73,8 @@
     border-width: 2px;
     border-style: solid;
     font-weight: bold;
-    font-size: calc(14px + (21 - 16) * ((100vw - 320px) / (1600 - 320))); 
-    border-radius: 30px; 
+    font-size: calc(14px + (21 - 16) * ((100vw - 320px) / (1600 - 320)));  
+    border-radius: 30px;
     
 }
 
@@ -157,7 +157,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     overscroll-behavior: contain;
-    -webkit-overflow-scrolling: touch; /* safari on mobiles */        
+    -webkit-overflow-scrolling: touch; /* safari on mobiles */    
 }
 
 .flyout-menu.flyout-menu-is-closed {
@@ -189,7 +189,6 @@
 .flyout-menu a.btn-cta {
     display: inline-block;
     padding: 10px 24px;
-    border-radius: 30px;
 }
 
 .flyout-menu hr { 
@@ -274,8 +273,8 @@
 .menu-light ul li a.btn-cta { font-weight: 500 }
 .menu-light ul li a.btn-cta:link, 
 .menu-light ul li a.btn-cta:visited {
-    border-color: rgb(80,227,194);
-    background-color: rgb(80,227,194);
+    border-color: #a7d0cd;
+    background-color: #a7d0cd;
     color: #000;
 }
 
@@ -287,37 +286,18 @@
 }
 
 /* on mobiles only */
-.flyout-menu.menu-light { background-color: rgb(227,250,245) }
-.menu-light.flyout-menu hr { background-color:rgb(80,227,194); border-color: rgb(80,227,194) } 
+.flyout-menu.menu-light { background-color: #FFE9D6}
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
 .menu-light.flyout-menu h5 a, 
-.menu-light.flyout-menu p { color: #403d50 } 
+
 
 /* colour of hamburger icon bars */
 .menu-light .item-icon .bar1, 
 .menu-light .item-icon .bar2, 
 .menu-light .item-icon .bar3 { background-color:#403d50 }	
 
-/* phone number link */
-a[href^=tel] { text-decoration: none; color: red }
 
-/* email link */
-.menu-light.flyout-menu h5 a:link, 
-.menu-light.flyout-menu h5 a:visited {
-    border-bottom-color: rgb(80,227,194);
-}
-
-.menu-light.flyout-menu h5 a:hover, 
-.menu-light.flyout-menu h5 a:active {
-    border-bottom-color: transparent;
-}
-
-/* profile image border colour */
-.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: rgb(80,227,194) }
-
-/* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color: rgb(80,227,194) }
 
 /* === End light background menu === */

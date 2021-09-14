@@ -4,8 +4,8 @@ body { font-family: 'Rubik', sans-serif }
 h1, h2, h3 { color: #222 }
 h4 { font-family: "Sacramento", sans-serif;}
 p, li { color: #403d50 }
-.bg-pastel-green { background-color: #FFE9D6}   /* NUEVA PALETA */
-.bg-pastel-grey { background-color: #FFE9D6}    /* NUEVA PALETA */
+.bg-pastel-green { background-color: #FFE9D6}   
+.bg-pastel-grey { background-color: #FFE9D6}   
 
 
 /* ==== CONTAINER FOR SINGLE COLUMN OF CONTENT ==== */
@@ -69,8 +69,8 @@ a.button:link, a.button:visited, a.button:hover, a.button:active {
 }
  
 a.button-solid:link, .button-solid:visited {
-    border-color: #A7D0CD  ;   /* NUEVA PALETA */
-    background-color: #A7D0CD   ;  /* NUEVA PALETA */
+    border-color: #A7D0CD  ;   
+    background-color: #A7D0CD   ;  
     color: #000;
 } 
  
@@ -112,11 +112,11 @@ a.fancy-link:hover, a.fancy-link:active {
     padding-bottom: 2px;
 }
 
-a.fancy-link:link, a.fancy-link:visited { color: rgb(49,145,131); border-bottom-color:rgb(49,145,131) }
+a.fancy-link:link, a.fancy-link:visited { color: #de8971; border-bottom-color:#de8971 }
 
 a.fancy-link:hover, a.fancy-link:active { color: rgb(36,64,84); border-bottom-color: rgb(36,64,84) }
 
-/* ============== DARK FANCY HYPERLINKS =================== */
+/* ============== DARK FANCY HYPERLINKS =================== */  
 
 a.dark-fancy-link:link, a.dark-fancy-link:visited,
 a.dark-fancy-link:hover, a.dark-fancy-link:active { 
@@ -206,7 +206,7 @@ a.dark-fancy-link:hover, a.dark-fancy-link:active { color: rgb(49,145,131); colo
 	.container-flexbox .item-3 { width: 100% }
 	.container-flexbox .item-3 { margin-bottom: 14% }
     .wrapper{
-        background-color: #DE8971        ;   /* NUEVA PALETA */
+        background-color: #e28f83 ;   
         border: none ;
         border-radius: 5%;
         padding:  12px 12px 0px 12px;
@@ -399,7 +399,7 @@ img.image-circle {
 #contact-form #btn-submit { 
 	float: right; 
 	border: none; 
-    background-color: #A7D0CD   ;   /* NUEVA PALETA */
+    background-color: #A7D0CD   ;   
     color: #000;
 	font-weight: bold;
     padding: 18px 28px;
